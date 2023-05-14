@@ -6,7 +6,7 @@ const NavigationBar: React.FC = () => {
     <AppBar position="static" color="primary">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          TallyFundMe
+          TallyFund
         </Typography>
         {/* Add your navigation links or other components here */}
       </Toolbar>
