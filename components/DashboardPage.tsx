@@ -5,6 +5,7 @@ import CampaignCard from './CampaignCard';
 interface Campaign {
   id: number;
   title: string;
+  imageUrl: string;
   description: string;
 }
 
