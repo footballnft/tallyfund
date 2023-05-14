@@ -39,7 +39,12 @@ const FeaturedCampaigns: React.FC<FeaturedCampaignsProps> = ({ campaigns }) => {
   return (
     <div>
       <h2>Featured Campaign</h2>
-      <CampaignCard campaign={currentCampaign} />
+      <CampaignCard
+        id={currentCampaign.id}
+        title={currentCampaign.title}
+        imageUrl={currentCampaign.imageUrl}
+        description={currentCampaign.description}
+      />
     </div>
   );
 };

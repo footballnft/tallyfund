@@ -1,23 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
 
-interface Campaign {
+interface CampaignCardProps {
   id: number;
   title: string;
   imageUrl: string;
   description: string;
 }
 
-interface CampaignCardProps {
-  campaign: Campaign;
-}
-
-const CampaignCard: React.FC<CampaignCardProps> = ({ campaign }) => {
+const CampaignCard: React.FC<CampaignCardProps> = ({ id, title, imageUrl, description }) => {
   return (
     <div>
-      <h3>{campaign.title}</h3>
-      <p>{campaign.description}</p>
-      <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <Image src={imageUrl} alt={title} width={500} height={300} />
     </div>
   );
 };

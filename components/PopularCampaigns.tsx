@@ -17,9 +17,12 @@ const PopularCampaigns: React.FC<PopularCampaignsProps> = ({ campaigns }) => {
     <div>
       <h2>Popular Campaigns</h2>
       {campaigns.map((campaign) => (
-        <CampaignCard
+          <CampaignCard
           key={campaign.id}
-          campaign={campaign}
+          id={campaign.id}
+          title={campaign.title}
+          imageUrl={campaign.imageUrl}
+          description={campaign.description}
         />
       ))}
     </div>

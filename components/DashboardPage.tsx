@@ -22,7 +22,12 @@ const DashboardPage: React.FC<Props> = ({ userCampaigns }) => {
       <Grid container spacing={3}>
         {userCampaigns.map((campaign) => (
           <Grid item xs={12} sm={6} md={4} key={campaign.id}>
-            <CampaignCard campaign={campaign} />
+            <CampaignCard
+              id={campaign.id}
+              title={campaign.title}
+              description={campaign.description}
+              imageUrl={campaign.imageUrl}
+            />
           </Grid>
         ))}
       </Grid>

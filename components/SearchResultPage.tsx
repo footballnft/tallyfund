@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 interface SearchResults {
   id: number;
   title: string;
+  imageUrl: string;
   description: string;
 }
 
@@ -14,9 +15,9 @@ const SearchResultPage: React.FC<{ query: string }> = ({ query }) => {
 
   // Assuming you have a list of search results based on the query
   const searchResults: SearchResults[] = [
-    { id: 1, title: 'Campaign 1', description: 'Description 1' },
-    { id: 2, title: 'Campaign 2', description: 'Description 2' },
-    { id: 3, title: 'Campaign 3', description: 'Description 3' },
+    { id: 1, title: 'Campaign 1', imageUrl: 'campaign1.jpg', description: 'Description 1' },
+    { id: 2, title: 'Campaign 2', imageUrl: 'campaign2.jpg', description: 'Description 2' },
+    { id: 3, title: 'Campaign 3', imageUrl: 'campaign3.jpg', description: 'Description 3' },
   ];
 
   return (
@@ -31,6 +32,7 @@ const SearchResultPage: React.FC<{ query: string }> = ({ query }) => {
               id={result.id}
               title={result.title}
               description={result.description}
+              imageUrl={result.imageUrl}
             />
           </Grid>
         ))}
