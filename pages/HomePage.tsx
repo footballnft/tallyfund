@@ -46,7 +46,8 @@ const HomePage: React.FC = () => {
       <HeroSection />
 
       {/* Search Bar */}
-      <SearchBar onSearch={handleSearch} />
+      {/* <SearchBar onSearch={handleSearch} /> */}
+      
 
       {/* Featured Campaigns Section */}
       <Typography variant="h4" align="center" gutterBottom>

@@ -2,6 +2,7 @@ import React from 'react';
 import { styled, StyledEngineProvider } from '@mui/system';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import Link from 'next/link';
+import SearchBar from './SearchBar';
 
 const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
   position: 'fixed',
@@ -16,8 +17,11 @@ const NavigationBarContent = styled(Toolbar)({
 const SiteLogo = styled('img')({
   height: 40, // Adjust the height as per your logo size
 });
-
-const NavigationBar: React.FC = () => {
+  const NavigationBar: React.FC = () => {
+    const handleSearch = (query: string) => {
+      // Implement the search functionality here
+      console.log('Search query:', query);
+    };
   return (
     <StyledEngineProvider injectFirst>
       <CustomNavigationBar>
@@ -34,6 +38,7 @@ const NavigationBar: React.FC = () => {
           <Link href="/how-it-works">
             <a>How It Works</a>
           </Link>
+          <SearchBar onSearch={handleSearch} />
           <Link href="/search">
             <a>Search</a>
           </Link>
