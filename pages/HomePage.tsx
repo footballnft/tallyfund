@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Typography, Container, Grid } from '@mui/material';
-import NavigationBar from '../components/NavigationBar';
 import HeroSection from '../components/HeroSection';
 import SearchBar from '../components/SearchBar';
 import FeaturedCampaigns from '../components/FeaturedCampaigns';
@@ -40,7 +39,8 @@ const HomePage: React.FC = () => {
   return (
     <Container maxWidth="lg">
       {/* Navigation Bar */}
-      <NavigationBar />
+       {/* <NavigationBar /> */}
+      
 
       {/* Hero Section */}
       <HeroSection />
