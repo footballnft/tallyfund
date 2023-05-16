@@ -1,10 +1,7 @@
 import React from 'react';
 import { styled, StyledEngineProvider } from '@mui/system';
 import { AppBar, Toolbar, Typography } from '@mui/material';
-import CampaignListing from './CampaignListingPage';
-import HowItWorks from './HowItWorks';
-import SearchBar from './SearchBar';
-import LoginPage from './LoginPage';
+import Link from 'next/link';
 
 const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
   position: 'fixed',
@@ -21,21 +18,28 @@ const SiteLogo = styled('img')({
 });
 
 const NavigationBar: React.FC = () => {
-  const handleSearch = (query: string) => {
-    // Implement the search functionality here
-    console.log('Search query:', query);
-  };
-
   return (
     <StyledEngineProvider injectFirst>
       <CustomNavigationBar>
         <NavigationBarContent>
-          <SiteLogo src="/public/logo.png" alt="Site Logo" />
-          <Typography variant="h6">Your Website</Typography>
-          <CampaignListing />
-          <HowItWorks />
-          <SearchBar onSearch={handleSearch} />
-          <LoginPage />
+          <Link href="/">
+            <a>
+              <SiteLogo src="/public/logo.png" alt="Site Logo" />
+            </a>
+          </Link>
+          <Typography variant="h6">TallyFundMe</Typography>
+          <Link href="/campaign-listing-page">
+            <a>Campaigns</a>
+          </Link>
+          <Link href="/how-it-works">
+            <a>How It Works</a>
+          </Link>
+          <Link href="/search">
+            <a>Search</a>
+          </Link>
+          <Link href="/login">
+            <a>Login</a>
+          </Link>
         </NavigationBarContent>
       </CustomNavigationBar>
     </StyledEngineProvider>
