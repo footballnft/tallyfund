@@ -39,7 +39,7 @@ const SiteLogo = styled('img')({
             <a>How It Works</a>
           </Link>
           <SearchBar onSearch={handleSearch} />
-          <Link href="/Search">
+          <Link href="/Login">
             <a>Login</a>
           </Link>
         </NavigationBarContent>
