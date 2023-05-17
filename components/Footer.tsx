@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={4}>
             <div>
-              <Typography variant="h6">Website Logo</Typography>
+              <Typography variant="h6">TallyFundMe</Typography>
               <Typography variant="body2" color="textSecondary">
                 Mission statement or description
               </Typography>
@@ -44,19 +44,17 @@ const Footer: React.FC = () => {
             <div>
               <SectionTitleTypography variant="h6">About Us</SectionTitleTypography>
               <Typography variant="body2" color="textSecondary">
-                <Link href="#">About Us</Link>
+                <Link href="/AboutUs">About Us</Link>
                 <br />
-                <Link href="#">Support</Link>
+                <Link href="/TermsOfUse">Terms of Use</Link>
                 <br />
-                <Link href="#">Terms of Use</Link>
+                <Link href="/FAQ">FAQ</Link>
                 <br />
-                <Link href="#">FAQ</Link>
+                <Link href="/PrivacyNotice">Privacy Notice</Link>
                 <br />
-                <Link href="#">Privacy Notice</Link>
+                <Link href="/Legal">Legal</Link>
                 <br />
-                <Link href="#">Legal</Link>
-                <br />
-                <Link href="#">Contact Us</Link>
+                <Link href="/ContactUs">Contact Us</Link>
               </Typography>
             </div>
           </Grid>
@@ -79,7 +77,7 @@ const Footer: React.FC = () => {
         </Grid>
         <Box mt={4}>
           <Typography variant="body2" color="textSecondary" align="center">
-            © {new Date().getFullYear()} Your Website. All rights reserved.
+            © {new Date().getFullYear()} TallyFundMe. All rights reserved.
           </Typography>
         </Box>
       </Container>
