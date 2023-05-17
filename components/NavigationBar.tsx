@@ -32,7 +32,7 @@ const SiteLogo = styled('img')({
             </a>
           </Link>
           <Typography variant="h6">TallyFundMe</Typography>
-          <Link href="/campaign-listing-page">
+          <Link href="/Campaigns">
             <a>Campaigns</a>
           </Link>
           <Link href="/how-it-works">
