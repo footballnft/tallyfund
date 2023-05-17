@@ -25,7 +25,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         onChange={(event) => setQuery(event.target.value)}
         InputProps={{
           endAdornment: (
-            <IconButton type="submit" color="primary" aria-label="search">
+            <IconButton type="submit" color="secondary" aria-label="search">
               <Search />
             </IconButton>
           ),
