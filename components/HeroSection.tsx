@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       }}
     >
       <Typography variant="h2" component="h1" gutterBottom>
-        Welcome to TallyFund
+        Welcome to TallyFundMe
       </Typography>
       <Typography variant="h5" color="text.secondary" paragraph>
         A crowdfunding platform for a cause.
