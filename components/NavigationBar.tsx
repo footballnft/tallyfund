@@ -5,7 +5,7 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 
 const CustomNavigationBar = styled(AppBar)({
-  position: 'static',
+  position: 'fixed',
 });
 
 const NavigationBarContent = styled(Toolbar)({
