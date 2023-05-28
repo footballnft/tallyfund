@@ -12,7 +12,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <NavigationBar /> {/* Move the NavigationBar component here */}
-      <Box paddingTop="59px"> {/* Adjust the padding value as needed */}
+      <Box paddingTop="64px"> {/* Adjust the padding value as needed */}
         <Component {...pageProps} />
       </Box>
       <Footer />
