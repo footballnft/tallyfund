@@ -32,14 +32,12 @@ const SiteLogo = styled('img')({
             </a>
           </Link>
           <Typography variant="h6">TallyFundMe</Typography>
-          <div>
           <Link href="/Campaigns">
             <a>Campaigns</a>
           </Link>
           <Link href="/HowItWorks">
             <a>How It Works</a>
           </Link>
-          </div>
           <SearchBar onSearch={handleSearch} />
           <Link href="/Login">
             <a>Login</a>
