@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 
 const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
   position: 'fixed',
-  zIndex: theme.zIndex.drawer + 1,
+  zIndex: theme.zIndex.drawer + 0,
 }));
 
 const NavigationBarContent = styled(Toolbar)({
