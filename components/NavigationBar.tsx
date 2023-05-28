@@ -5,7 +5,6 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 
 const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
-  position: 'fixed',
   zIndex: theme.zIndex.drawer + 1,
 }));
 
@@ -24,7 +23,7 @@ const SiteLogo = styled('img')({
     };
   return (
     <StyledEngineProvider injectFirst>
-      <CustomNavigationBar>
+      <CustomNavigationBar position="sticky">
         <NavigationBarContent>
           <Link href="/">
             <a>
