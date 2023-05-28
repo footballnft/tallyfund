@@ -24,7 +24,6 @@ const SiteLogo = styled('img')({
   return (
     <StyledEngineProvider injectFirst>
       <CustomNavigationBar>
-      <Container maxWidth="lg">
         <NavigationBarContent>
           <Link href="/">
             <a>
@@ -43,7 +42,6 @@ const SiteLogo = styled('img')({
             <a>Login</a>
           </Link>
         </NavigationBarContent>
-      </Container>
       </CustomNavigationBar>
     </StyledEngineProvider>
   );
