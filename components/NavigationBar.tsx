@@ -4,11 +4,7 @@ import { AppBar, Toolbar, Typography, Container } from '@mui/material';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 
-const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
-  position: 'fixed',
-  top: 0,
-  zIndex: theme.zIndex.drawer + 1,
-}));
+const CustomNavigationBar = styled(AppBar)();
 
 const NavigationBarContent = styled(Toolbar)({
   display: 'flex',
@@ -26,7 +22,7 @@ const SiteLogo = styled('img')({
   return (
     <StyledEngineProvider injectFirst>
       <CustomNavigationBar>
-      <Container maxWidth="lg">
+      <Container>
         <NavigationBarContent>
           <Link href="/">
             <a>
