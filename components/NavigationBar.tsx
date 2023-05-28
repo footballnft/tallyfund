@@ -4,7 +4,9 @@ import { AppBar, Toolbar, Typography, Container } from '@mui/material';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 
-const CustomNavigationBar = styled(AppBar)();
+const CustomNavigationBar = styled(AppBar)({
+  position: 'static',
+});
 
 const NavigationBarContent = styled(Toolbar)({
   display: 'flex',
