@@ -5,7 +5,7 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 
 const CustomNavigationBar = styled(AppBar)(({ theme }: { theme: any }) => ({
-  position: 'sticky',
+  position: 'fixed',
   zIndex: theme.zIndex.drawer + 1,
 }));
 
