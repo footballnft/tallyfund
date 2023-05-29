@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled, StyledEngineProvider } from '@mui/system';
-import { AppBar, Toolbar, Typography, Container } from '@mui/material';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 

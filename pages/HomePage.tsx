@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Typography, Container, Grid } from '@mui/material';
 import HeroSection from '../components/HeroSection';
-import SearchBar from '../components/SearchBar';
 import FeaturedCampaigns from '../components/FeaturedCampaigns';
 import PopularCampaigns from '../components/PopularCampaigns';
 import Statistics from '../components/Statistics';
