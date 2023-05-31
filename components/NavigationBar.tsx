@@ -27,7 +27,7 @@ const SiteLogo = styled('img')({
         <NavigationBarContent>
           <Link href="/">
             <a>
-              <SiteLogo src="/public/Logo.png" alt="Site Logo" />
+              <SiteLogo src="../public/Logo.png" alt="Site Logo" />
             </a>
           </Link>
           <Typography variant="h6">TallyFundMe</Typography>
