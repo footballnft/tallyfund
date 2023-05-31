@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Typography, Grid, Box, Link, useTheme } from '@mui/material';
+import { Container, Typography, Grid, Box, useTheme } from '@mui/material';
 import { styled, Theme } from '@mui/system';
+import Link from 'next/link';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
