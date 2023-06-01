@@ -11,7 +11,7 @@ const CustomNavigationBar = styled(AppBar)({
 
 const NavigationBarContent = styled(Toolbar)({
   display: 'flex',
-  //justifyContent: 'space-between',
+  justifyContent: 'space-between',
 });
 
 const SiteLogo = styled('img')({
@@ -31,7 +31,7 @@ const SiteLogo = styled('img')({
                   <SiteLogo src="/public/Logo.png" alt="Site Logo" />
                 </a>
             </Link>
-                  <Box justifyContent={'space-between'} flexDirection={'row'}>
+                  <Box justifyContent={'space-between'} display={'flex'} flexDirection={'row'}>
                           
                               
                                 <Typography variant="h6">TallyFundMe</Typography>
@@ -49,7 +49,7 @@ const SiteLogo = styled('img')({
                               
                       
                   </Box> 
-                  <Box justifyContent={'space-between'} flexDirection={'row-reverse'}>
+                  <Box justifyContent={'space-between'} display={'flex'} flexDirection={'row-reverse'}>
                           <SearchBar onSearch={handleSearch} />
                           <Link href="/Login">
                             <a>Login</a>
