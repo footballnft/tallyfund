@@ -3,6 +3,7 @@ import { Box, styled, StyledEngineProvider } from '@mui/system';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
+import { Block } from '@mui/icons-material';
 
 const CustomNavigationBar = styled(AppBar)({
   position: 'fixed',
@@ -30,26 +31,35 @@ const SiteLogo = styled('img')({
                   <SiteLogo src="/public/Logo.png" alt="Site Logo" />
                 </a>
             </Link>
-                  <Box>
+                  <Box justifyContent={'space-between'}>
                       <nav> 
                         <ul role="menubar">
-                          <li role="none">
-                          <Typography variant="h6">TallyFundMe</Typography>
-                          </li>
-                          <li role="none">
-                          <Link href="/Campaigns">
-                            <a>Campaigns</a>
-                          </Link>
-                          </li>
-                          <li role="none">
-                          <Link href="/HowItWorks">
-                            <a>How It Works</a>
-                          </Link>
-                          </li>
-                          </ul>  
+                          
+                            <li role="none">
+                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                                <Typography variant="h6">TallyFundMe</Typography>
+                              </menuitem>
+                            </li>
+                            
+                            <li role="none">
+                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                                <Link href="/Campaigns">
+                                  <a>Campaigns</a>
+                                </Link>
+                              </menuitem>
+                            </li>
+
+                            <li role="none">
+                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                                <Link href="/HowItWorks">
+                                  <a>How It Works</a>
+                                </Link>
+                              </menuitem>
+                            </li>
+                        </ul>  
                       </nav>
                   </Box> 
-                  <Box>
+                  <Box justifyContent={'space-between'}>
                           <SearchBar onSearch={handleSearch} />
                           <Link href="/Login">
                             <a>Login</a>
