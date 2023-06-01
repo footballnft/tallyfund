@@ -33,24 +33,23 @@ const SiteLogo = styled('img')({
             </Link>
                   <Box justifyContent={'space-between'} flexDirection={'row'}>
                           
-                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                              
                                 <Typography variant="h6">TallyFundMe</Typography>
-                              </menuitem>
                             
-                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                              
                                 <Link href="/Campaigns">
                                   <a>Campaigns</a>
                                 </Link>
-                              </menuitem>
+                              
 
-                              <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
+                              
                                 <Link href="/HowItWorks">
                                   <a>How It Works</a>
                                 </Link>
-                              </menuitem>
+                              
                       
                   </Box> 
-                  <Box justifyContent={'space-between'} flexDirection={'row'}>
+                  <Box justifyContent={'space-between'} flexDirection={'row-reverse'}>
                           <SearchBar onSearch={handleSearch} />
                           <Link href="/Login">
                             <a>Login</a>
