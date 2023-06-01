@@ -11,7 +11,7 @@ const CustomNavigationBar = styled(AppBar)({
 
 const NavigationBarContent = styled(Toolbar)({
   display: 'flex',
-  justifyContent: 'space-between',
+  //justifyContent: 'space-between',
 });
 
 const SiteLogo = styled('img')({
