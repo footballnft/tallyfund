@@ -31,7 +31,7 @@ const SiteLogo = styled('img')({
                   <SiteLogo src="/public/Logo.png" alt="Site Logo" />
                 </a>
             </Link>
-                  <Box justifyContent={'space-between'} display={'flex'} flexDirection={'row'}>
+                  
                           
                               
                                 <Typography variant="h6">TallyFundMe</Typography>
@@ -48,13 +48,13 @@ const SiteLogo = styled('img')({
                                 </Link>
                               
                       
-                  </Box> 
-                  <Box justifyContent={'space-between'} display={'flex'} flexDirection={'row-reverse'}>
+                
+                  
                           <SearchBar onSearch={handleSearch} />
                           <Link href="/Login">
                             <a>Login</a>
                           </Link>
-                  </Box>  
+                
         </NavigationBarContent>
       </CustomNavigationBar>
     </StyledEngineProvider>
