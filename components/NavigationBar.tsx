@@ -10,7 +10,7 @@ const CustomNavigationBar = styled(AppBar)({
 });
 
 const NavigationBarContent = styled(Toolbar)({
-  display: 'flex',
+  display: 'inline-flex',
   justifyContent: 'space-between',
 });
 
