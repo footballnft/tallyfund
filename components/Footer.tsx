@@ -45,17 +45,17 @@ const Footer: React.FC = () => {
             <div>
               <SectionTitleTypography variant="h6">About Us</SectionTitleTypography>
               <Typography variant="body2" color="textSecondary">
-                <Button href="/AboutUs" size='small'>About Us</Button>
+                <Button href="/AboutUs" size='small' color="secondary">About Us</Button>
                 <br />
-                <Button href="/TermsOfUse" size='small'>Terms of Use</Button>
+                <Button href="/TermsOfUse" size='small' color="secondary">Terms of Use</Button>
                 <br />
-                <Button href="/FAQ" size='small'>FAQ</Button>
+                <Button href="/FAQ" size='small' color="secondary">FAQ</Button>
                 <br />
-                <Button href="/PrivacyNotice" size='small'>Privacy Notice</Button>
+                <Button href="/PrivacyNotice" size='small' color="secondary">Privacy Notice</Button>
                 <br />
-                <Button href="/Legal" size='small'>Legal</Button>
+                <Button href="/Legal" size='small' color="secondary">Legal</Button>
                 <br />
-                <Button href="/ContactUs" size='small'>Contact Us</Button>
+                <Button href="/ContactUs" size='small' color="secondary">Contact Us</Button>
               </Typography>
             </div>
           </Grid>
