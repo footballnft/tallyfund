@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
               </Typography>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} marginBottom={10}>
             <div>
               <SectionTitleTypography variant="h6">Follow Us</SectionTitleTypography>
               <SocialIconBox>
