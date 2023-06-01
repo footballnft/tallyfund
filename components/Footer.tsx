@@ -49,15 +49,25 @@ const Footer: React.FC = () => {
                 <Link href="/AboutUs">About Us</Link>
                 </Button>
                 <br />
-                <Button href="/TermsOfUse" size="small" color="secondary">Terms of Use</Button>
+                <Button size="small" color="secondary">
+                <Link href="/TermsOfUse">Terms of Use</Link>
+                </Button>
                 <br />
-                <Button href="/FAQ" size="small" color="secondary">FAQ</Button>
+                <Button size="small" color="secondary">
+                <Link href="/FAQ">FAQ</Link>
+                </Button>
                 <br />
-                <Button href="/PrivacyNotice" size="small" color="secondary">Privacy Notice</Button>
+                <Button size="small" color="secondary">
+                <Link href="/PrivacyNotice">Privacy Notice</Link>
+                </Button>
                 <br />
-                <Button href="/Legal" size="small" color="secondary">Legal</Button>
+                <Button size="small" color="secondary">
+                <Link href="/Legal">Legal</Link>
+                </Button>
                 <br />
-                <Button href="/ContactUs" size="small" color="secondary">Contact Us</Button>
+                <Button size="small" color="secondary">
+                <Link href="/ContactUs">Contact Us</Link>
+                </Button>
               </Typography>
             </div>
           </Grid>
