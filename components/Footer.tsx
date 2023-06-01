@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer theme={theme}>
       <Container maxWidth="lg">
-        <Grid container spacing={4} marginBottom={10}>
+        <Grid container spacing={4} marginBottom={5}>
           <Grid item xs={12} sm={6} md={4}>
             <div>
               <Typography variant="h6">TallyFundMe</Typography>
@@ -46,6 +46,7 @@ const Footer: React.FC = () => {
               <SectionTitleTypography variant="h6">About Us</SectionTitleTypography>
               <Typography variant="body2" color="textSecondary">
                 <Link href="/AboutUs">About Us</Link>
+                <br />
                 <br />
                 <Link href="/TermsOfUse">Terms of Use</Link>
                 <br />
