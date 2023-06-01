@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, styled, StyledEngineProvider } from '@mui/system';
+import { borderRadius, styled, StyledEngineProvider } from '@mui/system';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
@@ -7,6 +7,7 @@ import { Block } from '@mui/icons-material';
 
 const CustomNavigationBar = styled(AppBar)({
   position: 'fixed',
+  borderRadius: '16px',
 });
 
 const NavigationBarContent = styled(Toolbar)({
