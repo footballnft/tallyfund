@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Grid, Box, useTheme } from '@mui/material';
+import { Container, Typography, Grid, Box, useTheme, Divider } from '@mui/material';
 import { styled, Theme } from '@mui/system';
 import Link from 'next/link';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -76,6 +76,7 @@ const Footer: React.FC = () => {
             </div>
           </Grid>
         </Grid>
+        <Divider/>
         <Box mt={4}>
           <Typography variant="body2" color="textSecondary" align="center">
             © {new Date().getFullYear()} TallyFundMe. All rights reserved.

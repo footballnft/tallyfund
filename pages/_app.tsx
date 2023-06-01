@@ -6,6 +6,7 @@ import theme from '../styles/theme';
 import Footer from '../components/Footer';
 import NavigationBar from '../components/NavigationBar'; // Import the NavigationBar component here
 import { Container } from '@mui/system';
+import { Divider } from '@mui/material';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
@@ -15,6 +16,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       <Container sx={{marginY: 10}}> {/* Adjust the padding value as needed */}
         <Component {...pageProps} />
       </Container>
+      <Divider/>
       <Footer />
     </ThemeProvider>
   );
