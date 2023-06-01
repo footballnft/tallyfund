@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             </div>
           </Grid>
         </Grid>
-        <Divider/>
+        <Divider variant="middle"/>
         <Box mt={4}>
           <Typography variant="body2" color="textSecondary" align="center">
             © {new Date().getFullYear()} TallyFundMe. All rights reserved.

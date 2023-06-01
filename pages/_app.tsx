@@ -13,7 +13,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <NavigationBar /> {/* Move the NavigationBar component here */}
-      <Container sx={{marginY: 10}}> {/* Adjust the padding value as needed */}
+      <Container sx={{marginY: 10, marginBottom: 5}}> {/* Adjust the padding value as needed */}
         <Component {...pageProps} />
       </Container>
       <Divider/>
