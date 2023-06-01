@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Grid, Box, useTheme, Divider } from '@mui/material';
+import { Container, Typography, Grid, Box, useTheme, Divider, Button } from '@mui/material';
 import { styled, Theme } from '@mui/system';
 import Link from 'next/link';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -47,6 +47,10 @@ const Footer: React.FC = () => {
               <Typography variant="body2" color="textSecondary">
                 <Link href="/AboutUs">About Us</Link>
                 <br />
+                <Button variant="contained" href="/AboutUs">
+  Link
+</Button>
+                
                 <br />
                 <Link href="/TermsOfUse">Terms of Use</Link>
                 <br />
