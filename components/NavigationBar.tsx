@@ -31,35 +31,26 @@ const SiteLogo = styled('img')({
                   <SiteLogo src="/public/Logo.png" alt="Site Logo" />
                 </a>
             </Link>
-                  <Box justifyContent={'space-between'}>
-                      <nav> 
-                        <ul role="menubar">
+                  <Box justifyContent={'space-between'} flexDirection={'row'}>
                           
-                            <li role="none">
                               <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
                                 <Typography variant="h6">TallyFundMe</Typography>
                               </menuitem>
-                            </li>
                             
-                            <li role="none">
                               <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
                                 <Link href="/Campaigns">
                                   <a>Campaigns</a>
                                 </Link>
                               </menuitem>
-                            </li>
 
-                            <li role="none">
                               <menuitem tabIndex={0} aria-haspopup="true" aria-expanded="false">
                                 <Link href="/HowItWorks">
                                   <a>How It Works</a>
                                 </Link>
                               </menuitem>
-                            </li>
-                        </ul>  
-                      </nav>
+                      
                   </Box> 
-                  <Box justifyContent={'space-between'}>
+                  <Box justifyContent={'space-between'} flexDirection={'row'}>
                           <SearchBar onSearch={handleSearch} />
                           <Link href="/Login">
                             <a>Login</a>
