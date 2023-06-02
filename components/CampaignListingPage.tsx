@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
-import { HashRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Image from 'next/image';
 import CampaignDetailsPage from './CampaignDetailsPage';
 
@@ -12,6 +12,8 @@ const campaigns = [
 ];
 
 const CampaignListingPage: React.FC = () => {
+  const isBrowser = typeof document !== 'undefined';
+  
   return (
     <Router>
       <Container maxWidth="lg">
