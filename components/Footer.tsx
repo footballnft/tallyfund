@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <div>
               <SectionTitleTypography variant="h6">About Us</SectionTitleTypography>
               <Typography variant="body2" color="textSecondary">
-                <Button size="small" color="secondary">
+                <Button size="small" color="inherit">
                 <Link href="/AboutUs">About Us</Link>
                 </Button>
                 <br />
