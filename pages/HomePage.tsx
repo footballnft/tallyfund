@@ -18,15 +18,15 @@ const HomePage: React.FC = () => {
 
   // Assuming you have data for featured campaigns, popular campaigns, statistics, and how it works
   const featuredCampaigns =  [
-    { id: 1, title: 'Campaign 1', imageUrl: 'campaign1.jpg', description: 'Description 1' },
-    { id: 2, title: 'Campaign 2', imageUrl: 'campaign2.jpg', description: 'Description 2' },
-    { id: 3, title: 'Campaign 3', imageUrl: 'campaign3.jpg', description: 'Description 3' },
+    { id: 1, imageUrl: 'campaign1.jpg', title: 'Campaign 1', description: 'Description 1' },
+    { id: 2, imageUrl: 'campaign2.jpg', title: 'Campaign 2', description: 'Description 2' },
+    { id: 3, imageUrl: 'campaign3.jpg', title: 'Campaign 3', description: 'Description 3' },
   ];
 
   const popularCampaigns = [
-    { id: 1, title: 'Campaign 1', imageUrl: 'campaign1.jpg', description: 'Description 1' },
-    { id: 2, title: 'Campaign 2', imageUrl: 'campaign2.jpg', description: 'Description 2' },
-    { id: 3, title: 'Campaign 3', imageUrl: 'campaign3.jpg', description: 'Description 3' },
+    { id: 1, imageUrl: 'campaign1.jpg', title: 'Campaign 1', description: 'Description 1' },
+    { id: 2, imageUrl: 'campaign2.jpg', title: 'Campaign 2', description: 'Description 2' },
+    { id: 3, imageUrl: 'campaign3.jpg', title: 'Campaign 3', description: 'Description 3' },
   ];
 
   const statistics = [

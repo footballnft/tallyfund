@@ -3,8 +3,8 @@ import CampaignCard from './CampaignCard';
 
 interface Campaign {
   id: number;
-  title: string;
   imageUrl: string;
+  title: string;
   description: string;
 }
 
@@ -41,8 +41,8 @@ const FeaturedCampaigns: React.FC<FeaturedCampaignsProps> = ({ campaigns }) => {
       <h2>Featured Campaign</h2>
       <CampaignCard
         id={currentCampaign.id}
-        title={currentCampaign.title}
         imageUrl={currentCampaign.imageUrl}
+        title={currentCampaign.title}
         description={currentCampaign.description}
       />
     </div>
