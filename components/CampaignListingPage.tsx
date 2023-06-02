@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { HashRouter as Router, Link, Route } from 'react-router-dom';
 import Image from 'next/image';
 import CampaignDetailsPage from './CampaignDetailsPage';
 
