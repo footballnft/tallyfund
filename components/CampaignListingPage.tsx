@@ -23,7 +23,7 @@ const CampaignListingPage: React.FC = () => {
             <Grid item xs={12} sm={6} md={4} key={campaign.id}>
               <Card>
                 <CardContent>
-                  <Link to={`/campaigns/${campaign.id}`}>
+                  <Link to={`/Campaigns/${campaign.id}`}>
                     <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
                     <Typography variant="h5" gutterBottom>
                       {campaign.title}
@@ -35,7 +35,7 @@ const CampaignListingPage: React.FC = () => {
             </Grid>
           ))}
         </Grid>
-        <Route path="/campaigns/:id" Component={CampaignDetailsPage} />
+        <Route path="/Campaigns/:id" Component={CampaignDetailsPage} />
       </Container>
     </Router>
   );
