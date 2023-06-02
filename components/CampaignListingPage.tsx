@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Image from 'next/image';
-import Link from 'next/link';
+import CampaignDetailsPage from './CampaignDetailsPage';
 
 // Assuming you have data for campaigns
 const campaigns = [
@@ -12,30 +13,31 @@ const campaigns = [
 
 const CampaignListingPage: React.FC = () => {
   return (
-    <Container maxWidth="lg">
-      <Typography variant="h4" align="center" gutterBottom>
-        Campaign Listing
-      </Typography>
-      <Grid container spacing={3}>
-        {campaigns.map((campaign) => (
-          <Grid item xs={12} sm={6} md={4} key={campaign.id}>
-            <Card>
+    <Router>
+      <Container maxWidth="lg">
+        <Typography variant="h4" align="center" gutterBottom>
+          Campaign Listing
+        </Typography>
+        <Grid container spacing={3}>
+          {campaigns.map((campaign) => (
+            <Grid item xs={12} sm={6} md={4} key={campaign.id}>
+              <Card>
                 <CardContent>
-                  <Link href={`/campaigns/${campaign.id}`}>
-                    <a>
-                      <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
-                        <Typography variant="h5" gutterBottom>
-                          {campaign.title}
-                        </Typography>
-                        <Typography>{campaign.description}</Typography>
-                    </a>
-                </Link>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+                  <Link to={`/campaigns/${campaign.id}`}>
+                    <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
+                    <Typography variant="h5" gutterBottom>
+                      {campaign.title}
+                    </Typography>
+                    <Typography>{campaign.description}</Typography>
+                  </Link>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+        <Route path="/campaigns/:id" Component={CampaignDetailsPage} />
+      </Container>
+    </Router>
   );
 };
 
