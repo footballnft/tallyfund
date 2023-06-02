@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Assuming you have data for campaigns
 const campaigns = [
@@ -19,12 +20,16 @@ const CampaignListingPage: React.FC = () => {
         {campaigns.map((campaign) => (
           <Grid item xs={12} sm={6} md={4} key={campaign.id}>
             <Card>
-              <CardContent>
-              <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
-                <Typography variant="h5" gutterBottom>
-                  {campaign.title}
-                </Typography>
-                <Typography>{campaign.description}</Typography>
+                <CardContent>
+                  <Link href={`/campaigns/${campaign.id}`}>
+                    <a>
+                      <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
+                        <Typography variant="h5" gutterBottom>
+                          {campaign.title}
+                        </Typography>
+                        <Typography>{campaign.description}</Typography>
+                    </a>
+                </Link>
               </CardContent>
             </Card>
           </Grid>
