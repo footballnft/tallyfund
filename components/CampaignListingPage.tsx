@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import Image from 'next/image';
 import CampaignDetailsPage from './CampaignDetailsPage';
 
@@ -12,11 +12,8 @@ const campaigns = [
 ];
 
 const CampaignListingPage: React.FC = () => {
-  const isBrowser = typeof document !== 'undefined';
-  
-  return (
-    <Router>
-      <Container maxWidth="lg">
+    return (
+        <Container maxWidth="lg">
         <Typography variant="h4" align="center" gutterBottom>
           Campaign Listing
         </Typography>
@@ -39,8 +36,7 @@ const CampaignListingPage: React.FC = () => {
         </Grid>
         <Route path="/Campaigns/:id" Component={CampaignDetailsPage} />
       </Container>
-    </Router>
-  );
+   );
 };
 
 export default CampaignListingPage;

@@ -1,23 +1,27 @@
-import '@/styles/globals.css';
+import React from 'react';
 import type { AppProps } from 'next/app';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../styles/theme';
 import Footer from '../components/Footer';
-import NavigationBar from '../components/NavigationBar'; // Import the NavigationBar component here
+import NavigationBar from '../components/NavigationBar';
 import { Container } from '@mui/system';
 import { Divider } from '@mui/material';
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavigationBar /> {/* Move the NavigationBar component here */}
-      <Container sx={{marginY: 10}}> {/* Adjust the padding value as needed */}
-        <Component {...pageProps} />
-      </Container>
-      <Divider/>
-      <Footer />
+      <Router>
+        <NavigationBar />
+        <Container sx={{ marginY: 10 }}>
+          <Component {...pageProps} />
+        </Container>
+        <Divider />
+        <Footer />
+      </Router>
     </ThemeProvider>
   );
 };
