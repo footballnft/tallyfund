@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
-import { Link, Route } from 'react-router-dom';
 import Image from 'next/image';
-import CampaignDetailsPage from './CampaignDetailsPage';
 
 // Assuming you have data for campaigns
 const campaigns = [
@@ -12,31 +10,28 @@ const campaigns = [
 ];
 
 const CampaignListingPage: React.FC = () => {
-    return (
-        <Container maxWidth="lg">
-        <Typography variant="h4" align="center" gutterBottom>
-          Campaign Listing
-        </Typography>
-        <Grid container spacing={3}>
-          {campaigns.map((campaign) => (
-            <Grid item xs={12} sm={6} md={4} key={campaign.id}>
-              <Card>
-                <CardContent>
-                  <Link to={`/Campaigns/${campaign.id}`}>
-                    <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
-                    <Typography variant="h5" gutterBottom>
-                      {campaign.title}
-                    </Typography>
-                    <Typography>{campaign.description}</Typography>
-                  </Link>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-        <Route path="/Campaigns/:id" Component={CampaignDetailsPage} />
-      </Container>
-   );
+  return (
+    <Container maxWidth="lg">
+      <Typography variant="h4" align="center" gutterBottom>
+        Campaign Listing
+      </Typography>
+      <Grid container spacing={3}>
+        {campaigns.map((campaign) => (
+          <Grid item xs={12} sm={6} md={4} key={campaign.id}>
+            <Card>
+              <CardContent>
+              <Image src={campaign.imageUrl} alt={campaign.title} width={500} height={300} />
+                <Typography variant="h5" gutterBottom>
+                  {campaign.title}
+                </Typography>
+                <Typography>{campaign.description}</Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
 };
 
 export default CampaignListingPage;
